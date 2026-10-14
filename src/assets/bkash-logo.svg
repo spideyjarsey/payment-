@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- bKash Signature Pink Background -->
+  <rect width="500" height="500" fill="#E2136E"/>
+  
+  <!-- Origami Bird with Crisp Facets and Seams -->
+  <g fill="#FFFFFF" stroke="#E2136E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Wing Outer Fold -->
+    <polygon points="70,74 196,244 63,104" />
+    
+    <!-- Main Left Wing -->
+    <polygon points="70,74 240,94 196,244" />
+    
+    <!-- Body Spine / Upper Back -->
+    <polygon points="240,94 365,268 196,244" />
+    
+    <!-- Head Crest & Crown -->
+    <polygon points="320,190 408,184 365,268" />
+    
+    <!-- Beak / Bill -->
+    <polygon points="408,184 442,218 365,268" />
+    
+    <!-- Breast / Belly Center -->
+    <polygon points="196,244 365,268 224,348" />
+    
+    <!-- Tail Flap / Lower Body -->
+    <polygon points="196,244 224,348 144,432" />
+    
+    <!-- Secondary Lower Feather Highlight -->
+    <polygon points="196,244 144,432 174,272" />
+  </g>
+</svg>

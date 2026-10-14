@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spidery Jersey Payment - পেমেন্ট ইনফরমেশন</title>
+  <meta name="description" content="Spidery Jersey Payment Information - bKash & Nagad Send Money details">
+  <meta name="theme-color" content="#09090b">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Bengali + Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Hind Siliguri', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: #09090b;
+    }
+    .glow-card {
+      box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.8), 0 0 40px -10px rgba(255, 255, 255, 0.03);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#09090b] text-neutral-100 flex items-center justify-center p-4 sm:p-6 antialiased selection:bg-neutral-800 selection:text-white">
+
+  <!-- Mobile-First Floating Payment Card Container -->
+  <main class="w-full max-w-[420px] bg-[#121217] border border-white/10 rounded-3xl p-6 sm:p-7 glow-card relative overflow-hidden backdrop-blur-xl">
+    
+    <!-- Ambient Brand Glow Accents -->
+    <div class="absolute -top-24 -left-24 w-48 h-48 bg-[#E2136E]/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-[#ED1C24]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header Section -->
+    <header class="text-center mb-6 relative">
+      <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/[0.04] border border-white/10 text-white mb-3.5 shadow-inner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/>
+          <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/>
+        </svg>
+      </div>
+
+      <div class="text-[11px] font-semibold tracking-widest uppercase text-neutral-400 mb-1">
+        Spidery Jersey
+      </div>
+
+      <h1 class="text-2xl sm:text-[26px] font-bold text-white tracking-tight leading-snug">
+        পেমেন্ট ইনফরমেশন
+      </h1>
+
+      <p class="text-sm text-neutral-400 font-medium mt-0.5">
+        Payment Information
+      </p>
+    </header>
+
+    <!-- Hardcoded Payment Cards -->
+    <section class="space-y-4 mb-6 relative" aria-label="পেমেন্টের মাধ্যমসমূহ">
+      
+      <!-- bKash Box with Prominent Logo -->
+      <article class="bg-neutral-900/90 border border-[#E2136E]/40 rounded-2xl p-4 sm:p-4.5 transition-all duration-200 hover:border-[#E2136E]/80 shadow-lg shadow-black/40">
+        <!-- Logo & Header row -->
+        <div class="flex items-center justify-between mb-3.5">
+          <div class="flex items-center gap-3">
+            <!-- Full bKash SVG Logo Icon -->
+            <div class="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl overflow-hidden shrink-0 shadow-lg shadow-[#E2136E]/20 bg-[#E2136E] border-2 border-white/10 flex items-center justify-center">
+              <svg viewBox="0 0 500 500" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <rect width="500" height="500" fill="#E2136E"/>
+                <g fill="#FFFFFF" stroke="#E2136E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+                  <polygon points="70,74 196,244 63,104" />
+                  <polygon points="70,74 240,94 196,244" />
+                  <polygon points="240,94 365,268 196,244" />
+                  <polygon points="320,190 408,184 365,268" />
+                  <polygon points="408,184 442,218 365,268" />
+                  <polygon points="196,244 365,268 224,348" />
+                  <polygon points="196,244 224,348 144,432" />
+                  <polygon points="196,244 144,432 174,272" />
+                </g>
+              </svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-white text-lg tracking-wide">bKash</span>
+                <span class="text-xs text-neutral-400 font-medium">(বিকাশ)</span>
+              </div>
+              <span class="text-xs font-semibold text-[#E2136E] block mt-0.5">Personal Account</span>
+            </div>
+          </div>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-[#E2136E]/15 text-[#E2136E] border border-[#E2136E]/20">
+            Send Money
+          </span>
+        </div>
+
+        <!-- Account details & Copy button -->
+        <div class="flex items-center justify-between gap-3 bg-black/55 rounded-xl p-3.5 border border-white/5">
+          <div class="min-w-0 flex-1">
+            <div id="num-bkash" class="font-mono text-xl sm:text-[23px] font-bold text-[#E2136E] tracking-wider select-all cursor-pointer" onclick="copyPaymentNumber('01715123766', 'btn-bkash')">
+              01715123766
+            </div>
+            <p class="text-xs text-neutral-400 mt-0.5">
+              পেমেন্টের মাধ্যম: <span class="text-neutral-200 font-medium">Send Money</span>
+            </p>
+          </div>
+
+          <button
+            id="btn-bkash"
+            onclick="copyPaymentNumber('01715123766', 'btn-bkash')"
+            class="shrink-0 min-h-[44px] min-w-[76px] px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/15 active:scale-95 text-white border border-white/10 cursor-pointer shadow-sm"
+            aria-label="bKash নম্বর কপি করুন"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+            </svg>
+            <span>কপি</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Nagad Box with Red Wordmark Logo "নগদ" -->
+      <article class="bg-neutral-900/90 border border-[#ED1C24]/40 rounded-2xl p-4 sm:p-4.5 transition-all duration-200 hover:border-[#ED1C24]/80 shadow-lg shadow-black/40">
+        <!-- Logo & Header row -->
+        <div class="flex items-center justify-between mb-3.5">
+          <div class="flex items-center gap-3">
+            <!-- Full Nagad SVG Logo Icon (White box with Swirl + Runner + "নগদ") -->
+            <div class="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl overflow-hidden shrink-0 shadow-lg shadow-[#ED1C24]/20 bg-white border-2 border-white/10 flex items-center justify-center p-0.5">
+              <svg viewBox="0 0 500 500" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <rect width="500" height="500" fill="#FFFFFF"/>
+                <g transform="translate(250, 185)">
+                  <path d="M 0,-130 C 72,-130 130,-72 130,0 C 130,72 72,130 0,130 C -60,130 -110,88 -124,32 C -116,56 -86,88 -45,95 C 10,105 82,75 88,0 C 92,-60 40,-102 -5,-108 C 2,-115 0,-130 0,-130 Z" fill="#F37023"/>
+                  <path d="M -45,-132 C -15,-142 35,-130 65,-95 L 30,-65 C 15,-80 -10,-88 -35,-82 Z" fill="#F99D1C"/>
+                  <path d="M 40,-100 C 65,-85 105,-40 100,10 L 65,0 C 68,-30 48,-55 30,-65 Z" fill="#E02626"/>
+                  <path d="M -20,-115 C -75,-95 -125,-40 -125,20 C -125,75 -85,115 -35,120 C -70,95 -85,55 -80,10 C -75,-35 -40,-85 -20,-115 Z" fill="#ED1C24"/>
+                  <circle cx="0" cy="5" r="54" fill="#FFFFFF"/>
+                  <g transform="translate(-32, -28) scale(1.15)" fill="#ED1C24">
+                    <circle cx="28" cy="12" r="5.5" />
+                    <path d="M 23,18 L 33,18 C 36,22 38,28 35,33 L 25,33 C 22,28 20,22 23,18 Z" />
+                    <ellipse cx="33" cy="24" rx="4.5" ry="6" transform="rotate(25 33 24)" />
+                    <rect x="0" y="24" width="58" height="2.8" rx="1.4" />
+                    <path d="M 16,27 L 19,34 L 14,34 Z" />
+                    <path d="M 25,32 L 29,43 L 38,43" stroke="#ED1C24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M 23,32 L 14,40 L 7,37" stroke="#ED1C24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M 23,20 L 18,25" stroke="#ED1C24" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                    <path d="M 28,21 L 38,25" stroke="#ED1C24" stroke-width="2.5" stroke-linecap="round" fill="none" />
+                  </g>
+                </g>
+                <g fill="#ED1C24" transform="translate(68, 332)">
+                  <path d="M 0,25 C 0,11 11,0 25,0 L 95,0 C 109,0 120,11 120,25 L 120,125 L 90,125 L 90,40 C 90,32 84,26 76,26 L 30,26 L 30,55 C 40,55 50,60 55,70 C 60,80 58,95 48,105 C 38,115 22,118 10,110 C 2,104 -1,92 0,80 L 26,80 C 26,86 28,91 33,91 C 38,91 42,86 42,80 C 42,70 34,66 25,66 C 11,66 0,55 0,40 Z"/>
+                  <path d="M 150,45 C 150,18 172,0 200,0 C 228,0 250,18 250,45 L 250,125 L 222,125 L 222,45 C 222,33 212,25 200,25 C 188,25 178,33 178,45 L 178,125 L 150,125 Z"/>
+                  <path d="M 275,0 L 370,0 C 384,0 395,11 395,25 L 395,100 C 395,114 384,125 370,125 L 275,125 L 275,100 L 365,100 L 365,25 L 275,25 Z"/>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-white text-lg tracking-wide">Nagad</span>
+                <span class="text-xs text-neutral-400 font-medium">(নগদ)</span>
+              </div>
+              <span class="text-xs font-semibold text-[#ED1C24] block mt-0.5">Personal Account</span>
+            </div>
+          </div>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-lg bg-[#ED1C24]/15 text-[#ED1C24] border border-[#ED1C24]/20">
+            Send Money
+          </span>
+        </div>
+
+        <!-- Account details & Copy button -->
+        <div class="flex items-center justify-between gap-3 bg-black/55 rounded-xl p-3.5 border border-white/5">
+          <div class="min-w-0 flex-1">
+            <div id="num-nagad" class="font-mono text-xl sm:text-[23px] font-bold text-[#ED1C24] tracking-wider select-all cursor-pointer" onclick="copyPaymentNumber('01759727963', 'btn-nagad')">
+              01759727963
+            </div>
+            <p class="text-xs text-neutral-400 mt-0.5">
+              পেমেন্টের মাধ্যম: <span class="text-neutral-200 font-medium">Send Money</span>
+            </p>
+          </div>
+
+          <button
+            id="btn-nagad"
+            onclick="copyPaymentNumber('01759727963', 'btn-nagad')"
+            class="shrink-0 min-h-[44px] min-w-[76px] px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/15 active:scale-95 text-white border border-white/10 cursor-pointer shadow-sm"
+            aria-label="Nagad নম্বর কপি করুন"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+            </svg>
+            <span>কপি</span>
+          </button>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Footer & Disclaimer (Clean & Minimalist) -->
+    <footer class="pt-2 border-t border-white/5 text-center">
+      <p class="text-xs text-neutral-400 leading-relaxed flex items-center justify-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400/90 shrink-0">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        <span>পেমেন্ট করার আগে নম্বরটি ভালোভাবে যাচাই করে নিন।</span>
+      </p>
+      <div class="mt-3 text-[11px] text-neutral-500">
+        <span>Spidery Jersey · Secure Payment</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Interactive Toast Notification -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-neutral-900 border border-white/20 text-white px-4 py-2.5 rounded-full text-xs font-medium shadow-2xl opacity-0 translate-y-3 pointer-events-none transition-all duration-200 z-50 flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+    <span id="toast-text">নম্বর কপি করা হয়েছে</span>
+  </div>
+
+  <script>
+    function copyPaymentNumber(number, buttonId) {
+      const btn = document.getElementById(buttonId);
+      const originalInner = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+          <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+        </svg>
+        <span>কপি</span>
+      `;
+
+      const onSuccess = () => {
+        if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+          try { navigator.vibrate(40); } catch(e) {}
+        }
+
+        btn.classList.remove('bg-white/10', 'hover:bg-white/15', 'text-white', 'border-white/10');
+        btn.classList.add('bg-emerald-500', 'text-neutral-950', 'border-emerald-400', 'font-bold', 'shadow-md', 'shadow-emerald-500/30');
+        btn.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          <span>ডান</span>
+        `;
+
+        showToast(number + ' কপি করা হয়েছে!');
+
+        setTimeout(() => {
+          btn.classList.remove('bg-emerald-500', 'text-neutral-950', 'border-emerald-400', 'font-bold', 'shadow-md', 'shadow-emerald-500/30');
+          btn.classList.add('bg-white/10', 'hover:bg-white/15', 'text-white', 'border-white/10');
+          btn.innerHTML = originalInner;
+        }, 2000);
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(number)
+          .then(onSuccess)
+          .catch(() => fallbackCopy(number, onSuccess));
+      } else {
+        fallbackCopy(number, onSuccess);
+      }
+    }
+
+    function fallbackCopy(text, cb) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-999999px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        const ok = document.execCommand('copy');
+        if (ok) cb();
+      } catch (e) {
+        console.error('Copy fallback error', e);
+      }
+      ta.remove();
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toast-text');
+      toastText.textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-3');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
