@@ -1,0 +1,6 @@
+{
+  "name": "Payment",
+  "description": "Minimalist mobile payment web application for Spidery Jersey with instant bKash and Nagad payment details and copy-to-clipboard functionality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
